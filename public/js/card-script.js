@@ -1,6 +1,9 @@
 async function fetchCards() {
     try {
-        const response = await fetch('/cards');
+        // Determine the correct path based on the current environment
+        const cardsPath = window.location.hostname === 'localhost' ? '/cards' : '/cards.json';
+        
+        const response = await fetch(cardsPath);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -12,7 +15,6 @@ async function fetchCards() {
         return [];
     }
 }
-
 
 function getFilteredCards(cards, filters) {
     return cards.filter(card => {
