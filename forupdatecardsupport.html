@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Card Skills</title>
+    <link rel="stylesheet" href="update-page.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Card Skills</h1>
+
+        <div class="section add-card-section">
+            <h2>Add New Card</h2>
+            <form id="add-form">
+                <div class="form-group">
+                    <label for="description">Card Skill:</label>
+                    <input type="text" id="description" name="description" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Card Image URL:</label>
+                    <input type="url" id="image" name="image" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="itemIcon">Item Icon URL:</label>
+                    <input type="url" id="itemIcon" name="itemIcon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rare">Rare:</label>
+                    <select id="rare" name="rare" required>
+                        <option value="SSR">SSR</option>
+                        <option value="SR">SR</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Type:</label>
+                    <select id="type" name="type" required>
+                        <option value="Vocal">Vocal</option>
+                        <option value="Dance">Dance</option>
+                        <option value="Visual">Visual</option>
+                        <option value="Assist">Assist</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDetail1">Event Detail 1:</label>
+                    <input type="text" id="eventDetail1" name="eventDetail1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDetail2">Event Detail 2:</label>
+                    <input type="text" id="eventDetail2" name="eventDetail2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="abilityDetail1">Ability Detail 1:</label>
+                    <input type="text" id="abilityDetail1" name="abilityDetail1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="abilityDetail2">Ability Detail 2:</label>
+                    <input type="text" id="abilityDetail2" name="abilityDetail2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="abilityDetail3">Ability Detail 3:</label>
+                    <input type="text" id="abilityDetail3" name="abilityDetail3" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="abilityDetail4">Ability Detail 4:</label>
+                    <input type="text" id="abilityDetail4" name="abilityDetail4" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="abilityDetail5">Ability Detail 5:</label>
+                    <input type="text" id="abilityDetail5" name="abilityDetail5" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="abilityDetail6">Ability Detail 6:</label>
+                    <input type="text" id="abilityDetail6" name="abilityDetail6" required>
+                </div>
+
+                <div class="center-button">
+                    <button type="submit">Add Card</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="section filter-section">
+            <h2>Filter by Category</h2>
+            <div class="filter-container">
+                <div id="filter-rare-group" class="filter-group">
+                    <label><input type="checkbox" name="filter-rare" value="SSR"> <img src="public/images/icon/SSR.png" alt="SSR" class="filter-icon"> SSR</label>
+                    <label><input type="checkbox" name="filter-rare" value="SR"> <img src="public/images/icon/SR.png" alt="SR" class="filter-icon"> SR</label>
+                </div>
+                <div id="filter-type-group" class="filter-group">
+                    <label><input type="checkbox" name="filter-type" value="Vocal"> <img src="public/images/icon/vocal.png" alt="Vocal" class="filter-icon"> Vocal</label>
+                    <label><input type="checkbox" name="filter-type" value="Dance"> <img src="public/images/icon/dance.png" alt="Dance" class="filter-icon"> Dance</label>
+                    <label><input type="checkbox" name="filter-type" value="Visual"> <img src="public/images/icon/visual.png" alt="Visual" class="filter-icon"> Visual</label>
+                    <label><input type="checkbox" name="filter-type" value="Assist"> <img src="public/images/icon/assist.png" alt="Assist" class="filter-icon"> Assist</label>
+                </div>
+            </div>
+            <div class="center-button">
+                <button onclick="clearFilters()">Clear</button>
+            </div>
+        </div>
+
+        <div class="section card-wrapper">
+            <div class="card-overlay">
+                <div id="cards-container" class="card-container"></div>
+            </div>
+        </div>
+
+        <div class="pagination-wrapper">
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+
+    <script src="update-script.js"></script>
+</body>
+</html>
