@@ -34,23 +34,6 @@
     "abilityDetail6": "ืnew5"
   },
   {
-    "description": "SSR Vocal",
-    "image": "uploads\\4196a48c98cda6ee77c4c15b134c8a47",
-    "itemIcon": "uploads\\c27a0bf2991e30b5e92637a3c9dfb867",
-    "rare": "SSR",
-    "type": "Vocal",
-    "lessonSupport": "Vocal Lesson",
-    "chance": "สูง",
-    "eventDetail1": "SSR Vocal",
-    "eventDetail2": "SSR Vocal",
-    "abilityDetail1": "SSR Vocal",
-    "abilityDetail2": "SSR Vocal",
-    "abilityDetail3": "SSR Vocal",
-    "abilityDetail4": "SSR Vocal",
-    "abilityDetail5": "SSR Vocal",
-    "abilityDetail6": "SSR Vocal"
-  },
-  {
     "description": "SSR Assist",
     "image": "uploads\\38546cc5aa257fffdf10949eb6ce4936",
     "itemIcon": "uploads\\e25027fc9256b1a2916d02438ece19a4",
